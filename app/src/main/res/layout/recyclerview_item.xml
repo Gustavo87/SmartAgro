@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/contenedor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline22"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <Button
+        android:id="@+id/btnActivar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Activar"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@drawable/barrainferiorbackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline22"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="1.0" />
+
+    <TextView
+        android:id="@+id/view_descripcion_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SER420 Mal Estado Del Terreno"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline22"
+        app:layout_constraintTop_toTopOf="parent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/view_codigo_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="N/D | N/D | Inactiva"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnActivar"
+        app:layout_constraintTop_toBottomOf="@+id/view_descripcion_textview"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_codigo_textview"
+        app:srcCompat="@drawable/linea" />
+
+</android.support.constraint.ConstraintLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:id="@+id/contenedor"-->
+    <!--android:background="@drawable/bg_recyclerview"-->
+    <!--&gt;-->
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="1"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/view_descripcion_textview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textSize="30dp"-->
+            <!--android:text="Arado De Tiro / Rome Plow"-->
+            <!--android:layout_weight="1"-->
+            <!--android:scrollHorizontally="true"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="1"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/view_codigo_textview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:textColor="@android:color/holo_green_dark"-->
+            <!--android:textSize="25dp"-->
+            <!--android:text="SER018"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/btnActivar"-->
+        <!--android:text="ACTIVAR"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+<!--</LinearLayout>-->
+

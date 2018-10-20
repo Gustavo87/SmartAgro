@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SmartAgro</string>
+    // 1- Notificaciones
+    <string name="bajando_apk_msg">Descargando actualización de app %1$s</string>
+    <string name="bajando_maestro_frentes_msg">Bajando Frentes...</string>
+    <string name="bajando_maestro_plantios_msg">Bajando Plantios...</string>
+    <string name="bajando_maestro_os_msg">Bajando Ordenes Servicio...</string>
+    <string name="bajando_maestro_actividadesinactivas_msg">Bajando Actividades Inactivas...</string>
+    <string name="bajando_maestro_implementos_msg">Bajando Implementos...</string>
+    <string name="bajando_maestro_empleados_msg">Bajando Empleados...</string>
+    <string name="bajando_maestro_dispositivo_msg">Bajando Información Dispositivo...</string>
+    <string name="bajando_maestro_version_msg">Bajando Información Versión...</string>
+    <string name="guardando_maestro_frentes_msg">Guardando Frentes...</string>
+    <string name="guardando_maestro_plantios_msg">Guardando Plantios...</string>
+    <string name="guardando_maestro_os_msg">Guardando Ordenes Servicio...</string>
+    <string name="guardando_maestro_actividadesinactivas_msg">Guardando Actividades Inactivas...</string>
+    <string name="guardando_maestro_implementos_msg">Guardando Implementos...</string>
+    <string name="guardando_maestro_empleados_msg">Guardando Empleados...</string>
+    <string name="guardando_maestro_dispositivo_msg">Guardando Información Dispositivo...</string>
+    <string name="guardando_maestro_version_msg">Guardando Información Versión...</string>
+    <string name="borrando_tablas_maestras_msg">Espere...</string>
+    <string name="enviando_datos_msg">Enviando...</string>
+    <string name="titulo_dialogo_sincronizacion">Sincronizacion</string>
+    <string name="mensaje_dialogo_sincronizacion"> Está seguro que desea Actualizar los Maestros?</string>
+    <string name="titulo_dialogo_gps">GPS</string>
+    <string name="mensaje_dialogo_gps">El GPS está inactivo, para continuar debe habilitar. Desea habilitar el GPS?</string>
+    // 1.1- Confirmación de Actividad por Equipo
+    <string name="confirm_axe_tvareatrabajada">Area Trabajada(ha)</string>
+    <string name="confirm_axe_autoguiado">Usa Autoguiado</string>
+
+    //2- Errores
+    <string name="bajando_maestro_frentes_error">Error bajando el maestro de Frentes</string>
+    <string name="bajando_maestro_plantios_error">Error bajando maestro de Plantios</string>
+    <string name="bajando_maestro_os_error">Error bajando el maestro de Ordenes Servicio</string>
+    <string name="bajando_maestro_actividadesinactivas_error">Error bajando el maestro de Actividades Inactivas</string>
+    <string name="bajando_maestro_implementos_error">Error bajando maestro de Implementos</string>
+    <string name="bajando_maestro_empleados_error">Error bajando maestro de Empleados</string>
+    <string name="bajando_maestro_dispositivo_error">Error bajando Información Dispositivo...</string>
+    <string name="bajando_maestro_version_error">Error bajando Información Versión...</string>
+    <string name="guardando_maestro_frentes_error">Error guardando el maestro de Frentes</string>
+    <string name="guardando_maestro_os_error">Error guardando maestro de OS</string>
+    <string name="guardando_maestro_actividadesinactivas_error">Error guardando maestro de Actividades Inactivas</string>
+    <string name="guardando_maestro_actividades_error">Error guardando el maestro de Actividades</string>
+    <string name="guardando_maestro_implementos_error">Error guardando maestro de Implementos</string>
+    <string name="guardando_maestro_empleados_error">Error guardando maestro de Empleados</string>
+    <string name="guardando_actividades_x_equipo_error">Error guardando actividad por equipo</string>
+    <string name="guardando_detalle_x_actividad_error">Error guardando detalle por actividad</string>
+    <string name="borrando_maestro_error">Error borrando tabla maestra</string>
+
+
+</resources>

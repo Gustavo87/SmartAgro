@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_b"
+    >
+
+    <TextView
+        android:id="@+id/seleccion_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INACTIVO | SER420 Mal estado del Terreno"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+
+    <Button
+        android:id="@+id/btnRemoverImplemento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remover"
+        android:textSize="12sp"
+        android:onClick="BorrarSeleccion"
+        android:visibility="gone"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seleccion_actual"
+        app:layout_constraintTop_toTopOf="@+id/seleccion_actual"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/barrainferiorbackground"
+        android:hint="Busqueda de Implementos"
+        android:drawableLeft="@drawable/lupa"
+        android:textColorHighlight="#fff"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textSize="43.5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seleccion_actual"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.1" />
+
+    <TextView
+        android:id="@+id/contadorBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewImplementos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/contadorBusqueda"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contadorBusqueda" />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/fondo_b"-->
+    <!--&gt;-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline1"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.11"-->
+        <!--tools:layout_editor_absoluteY="58dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+    <!--<android.support.constraint.Guideline-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/guideline2"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.16"-->
+        <!--tools:layout_editor_absoluteY="85dp"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/contadorBusqueda"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="24sp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/guideline2"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/guideline1"-->
+        <!--app:layout_constraintHorizontal_bias="0.489"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView16"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/guideline1"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:srcCompat="@drawable/ic_lupa"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="8dp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editTextSearch"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginLeft="24dp"-->
+        <!--android:background="@drawable/barrainferiorbackground"-->
+        <!--android:hint="Busqueda de Implementos"-->
+        <!--android:textColorHighlight="#fff"-->
+        <!--android:inputType="text"-->
+        <!--android:maxLines="1"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="43.5dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/guideline1"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/imageView16"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.0"-->
+        <!--android:layout_marginStart="24dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginRight="8dp" />-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerviewImplementos"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_below="@+id/contadorBusqueda"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:padding="8dp"-->
+        <!--android:scrollbarSize="5dp"-->
+        <!--android:scrollbarThumbVertical="@android:color/darker_gray"-->
+        <!--android:scrollbars="vertical"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/contadorBusqueda" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
+
